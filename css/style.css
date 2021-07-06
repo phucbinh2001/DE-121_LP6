@@ -1,6 +1,16 @@
+@font-face {
+ font-family: hanzel;
+ src:url('../fonts/Hanzel.ttf') format('truetype');
+ font-weight:normal;
+ font-style:normal;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
+}
+.text-center {
+    text-align: center;
 }
 
 p {
@@ -31,6 +41,12 @@ img {
     padding-top: 60px;
 }
 
+.title {
+    font-size: 50px;
+    font-family: hanzel;
+    font-weight: 100;
+}
+
 .menu {
     list-style: none;
 }
@@ -55,6 +71,7 @@ header {
     padding: 10px 30px;
     border-radius: 40px;
     color: #fff;
+    text-decoration: none;
 }
 
 .btn-orange {
@@ -135,15 +152,27 @@ header {
 margin-top: 30px;
 }
 
+.s-4 {
+    background-image: url('../img/bg-3.jpg');
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
 .s-4 .card {
     width: 510px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     overflow: hidden;
+    background-color: #fff;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .s-4 .card-header {
     font-size: 35px;
     padding: 20px 40px;
+    color: #fff;
+    text-shadow: 0px 3px 0px rgb(0 0 0 / 25%);
 }
 
 .s-4 .card-header p {
@@ -154,9 +183,58 @@ margin-top: 30px;
     background: linear-gradient(180deg, #FFCA54 0%, #FF9047 100%);
 }
 
+.card-blue {
+    background: linear-gradient(170.09deg, #32D5FF 7.44%, #377CFF 149.59%);
+}
+
+
+.s-4 .title {
+    color: #fff;
+}
+
 .s-4 .card-header img {
     width: 114px;
     height: 114px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.s-4 .card-content {
+    padding: 20px 40px;
+}
+
+.s-4 .card-content p {
+    font-size: 24px;
+    line-height: 24px;
+    list-style-image: url('../img/orange-dot.svg');
+}
+
+.s-4 .card-content .dot {
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    margin-right: 10px;
+}
+
+.s-4 .card-content .orange-dot {
+    background: linear-gradient(87.47deg, #FFF35C -45.76%, #FF795B 155.7%);
+}
+
+.s-4 .card-content .blue-dot {
+    background: linear-gradient(87.47deg, #33D5FF -45.76%, #1F90E6 155.7%);
+}
+
+.s-4 .card-footer {
+    text-align: center;
+}
+
+.s-4 img{
+    width: 300px;
+    top: -80px;
+}
+
+.s-4 .card-group {
+    width: 100%;
 }
