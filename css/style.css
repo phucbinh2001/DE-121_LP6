@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+p {
+    line-height: 150%;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+img {
+    width: 100%;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-6 {
+    padding: 0 60px;
+}
+
+.pt-6 {
+    padding-top: 60px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+}
+
+header {
+    padding: 20px;
+    background: linear-gradient(90deg, #00092B 0%, #4A289C 51.56%, #00092B 100%);
+}
+
+.border-right {
+    border-right: 1px solid #efefef;
+}
+
+.btn {
+    font-size: 25px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    color: #fff;
+}
+
+.btn-orange {
+    background: linear-gradient(180deg, #FFC954 0%, #FF9348 100%);
+}
+
+.btn-blue {
+    background: linear-gradient(180deg, #33D2FF 0%, #35A5FF 91.77%);
+
+}
+
+.banner {
+    padding: 20px 0;
+    background-image: url(../img/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .col-7 {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.banner h2 {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.loiich {
+    padding: 60px 0;
+}
+
+.loiich .col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+        font-size: 20px;
+    line-height: 150%;
+}
+
+.loiich .bg {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(168.26deg, #C57BFF 15.09%, #454BCB 141.04%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loiich img {
+    width: 50%;
+}
+
+.s-3 .col-6 {
+    text-align: center;
+}
+
+.s-3 h2 {
+    font-size: 40px;
+    color: #8162E3;
+}
+
+.s-3 p {
+    font-size: 40p;
+}
+
+.s-3 img {
+    width: 500px;
+}
+
+.s-3 .btn-group {
+margin-top: 30px;
+}
+
+.s-4 .card {
+    width: 510px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.s-4 .card-header {
+    font-size: 35px;
+    padding: 20px 40px;
+}
+
+.s-4 .card-header p {
+    margin: 0;
+}
+
+.card-orange {
+    background: linear-gradient(180deg, #FFCA54 0%, #FF9047 100%);
+}
+
+.s-4 .card-header img {
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
