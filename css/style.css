@@ -5,9 +5,16 @@
  font-style:normal;
 }
 
+@font-face {
+ font-family: avenir;
+ src:url('../fonts/avenirnextregular08.ttf') format('truetype');
+ font-weight:100;
+ font-style:normal;
+}
+
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: avenir;
 }
 .text-center {
     text-align: center;
@@ -85,7 +92,10 @@ header {
 
 .btn-blue {
     background: linear-gradient(180deg, #33D2FF 0%, #35A5FF 91.77%);
+}
 
+.btn-purple {
+    background: linear-gradient(180deg, #BA78FB 0%, #8464E5 100%);
 }
 
 .banner {
@@ -192,6 +202,10 @@ margin-top: 30px;
     background: linear-gradient(170.09deg, #32D5FF 7.44%, #377CFF 149.59%);
 }
 
+.card-purple {
+    background: linear-gradient(180deg, #C27BFE 0%, #7D61E2 100%);
+
+}
 
 .s-4 .title {
     color: #fff;
@@ -214,7 +228,7 @@ margin-top: 30px;
     list-style-image: url('../img/orange-dot.svg');
 }
 
-.s-4 .card-content .dot {
+.dot {
     height: 24px;
     width: 24px;
     display: inline-block;
@@ -223,12 +237,16 @@ margin-top: 30px;
     margin-right: 10px;
 }
 
-.s-4 .card-content .orange-dot {
+.orange-dot {
     background: linear-gradient(87.47deg, #FFF35C -45.76%, #FF795B 155.7%);
 }
 
-.s-4 .card-content .blue-dot {
+.blue-dot {
     background: linear-gradient(87.47deg, #33D5FF -45.76%, #1F90E6 155.7%);
+}
+
+.purple-dot {
+    background: linear-gradient(180deg, #7D61E2 0%, #C27BFE 100%);
 }
 
 .s-4 .card-footer {
@@ -335,7 +353,17 @@ margin-top: 30px;
     margin-top: 150px;
 }
 
-.kid-feedback .feeback {
+.kid-feedback .row{
+    padding: 40px 0;
+}
+
+.feedback-content {
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.kid-feedback .feedback-content {
     color: #fff;
 }
 
@@ -348,8 +376,148 @@ margin-top: 30px;
     background: linear-gradient(180deg, #FE966A 0%, #FD4BA8 100%);
 }
 
+.kid-feedback .row:nth-child(2) {
+    background: linear-gradient(180deg, #C47CFF 0%, #795FE0 100%);
+    flex-direction: row-reverse;
+}
+
+.kid-feedback .row:nth-child(3) {
+    background: linear-gradient(179.77deg, #50D6FF 0.2%, #36A9FF 99.8%);
+}
+
 .feedback-title img {
     width: 100px;
     height: 100px;
+    margin-right: 15px;
     border-radius: 50%;
+    border: 2px solid #fff;
 }
+
+.feedback-title {
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.kid-feedback  .feedback-title {
+color: #fff;
+}
+
+.kid-feedback .video {
+    background-color: #fff;
+    height: 350px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.parents-feedback .row {
+    padding: 30px;
+}
+
+.parents-feedback .feedback-title {
+    font-size: 24px;
+}
+
+.parents-feedback .feedback-title img {
+    border: 2px solid #8162E3;
+ }
+
+.parents-feedback .image {
+    width: 400px;
+}
+
+.parents-feedback .feedback {
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 50px 0 0 50px;
+    height: fit-content;
+    padding: 40px;
+}
+
+.parents-feedback .radius-custom {
+    border-radius: 0 50px 50px 0;
+}
+
+.plans {
+    background-image: url('../img/bg-4.jpg');
+    padding: 60px 0;
+}
+
+.plan-card {
+    border-radius: 30px 30px 0 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 4px 0px 4px 0px #00000040;
+}
+
+.plan-card .card-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.plan-card .card-header {
+    display: flex;
+    padding: 12px 10px;
+    color: #fff;
+}
+
+.plan-card .card-title {
+    font-family: hanzel;
+    font-size: 45px;
+}
+
+.plan-card .card-sub-title {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.plan-card .card-content {
+    padding-left: 15px;
+    padding-bottom: 47px;
+    font-size: 24px;
+}
+
+.plan-card .price {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 100%;
+    margin: 0;
+}
+
+.plan-card .price span {
+    font-size: 40px;
+}
+
+.price-blue {
+    color: #4ED1FF;
+}
+
+.price-orange {
+    color: #FF7502;
+}
+
+.price-purple {
+    color: #8765E6;
+}
+
+footer {
+    background-image: url('../img/footer.svg');
+    min-height: 1000px;
+    color: #fff;
+}
+
+footer .p-absolute {
+    height: 50%;
+    top: 50%;
+    bottom: 0;
+}
+
+footer .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
