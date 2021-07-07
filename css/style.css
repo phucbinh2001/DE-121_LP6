@@ -20,6 +20,11 @@ body {
     text-align: center;
 }
 
+.text-right {
+    text-align: end;
+    padding-right: 14px;
+}
+
 p {
     line-height: 150%;
 }
@@ -50,6 +55,10 @@ img {
 
 .mr-20 {
     margin-right: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
 }
 
 .title {
@@ -126,7 +135,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
         font-size: 20px;
     line-height: 150%;
@@ -475,8 +483,7 @@ color: #fff;
 }
 
 .plan-card .card-content {
-    padding-left: 15px;
-    padding-bottom: 47px;
+    padding: 0 15px 47px 15px;
     font-size: 24px;
 }
 
@@ -503,16 +510,76 @@ color: #fff;
     color: #8765E6;
 }
 
-footer {
-    background-image: url('../img/footer.svg');
-    min-height: 1000px;
-    color: #fff;
+.form-box {
+    padding: 300px 0 100px;
 }
 
-footer .p-absolute {
-    height: 50%;
-    top: 50%;
-    bottom: 0;
+.form table{
+    background: linear-gradient(180deg, #FFCA54 10.2%, #FF8D3C 159.61%);
+    border-radius: 20px;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.form .title {
+    margin-bottom: 30px;
+}
+
+.form input {
+    width: 100%;
+    height: 75px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 35px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 35px;
+    padding-left: 20px;
+}
+
+.sdt_input {
+    width: 350px;
+}
+
+.form input:focus-visible {
+    outline: none;
+}
+
+.table-label {
+    width: 280px;
+}
+
+.btn-table {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.robot {
+    width: 180px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-75%)
+}
+
+footer {
+    background-image: url('../img/footer.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+footer .footer-content {
+    margin-top: 24%;
 }
 
 footer .icon {
@@ -521,3 +588,20 @@ footer .icon {
     margin-right: 10px;
 }
 
+footer .copyright {
+    /* margin-top: 90px; */
+    border-top: 1px solid #fff;
+}
+
+
+
+/* //nhap */
+/* table, th, td {
+  border: 1px solid black;
+}
+
+table {
+    width: 100%;
+}
+
+ */
