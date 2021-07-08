@@ -3,6 +3,7 @@
   src: url("../fonts/Hanzel.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* IMPORT FONT */
@@ -13,6 +14,7 @@
     url("../fonts/woff/avenirnextregular08.woff") format("woff");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -22,6 +24,7 @@
     url("../fonts/woff/avenirnextmedium06.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -31,6 +34,7 @@
     url("../fonts/woff/avenirnextdemibold03.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -40,6 +44,7 @@
     url("../fonts/woff/brownbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -49,9 +54,11 @@
     url("../fonts/woff/avenirnextbold01.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 /* IMPORT FONT */
+
 html {
   scroll-behavior: smooth;
 }
@@ -215,6 +222,10 @@ header {
 
 .introduction img {
   width: 50%;
+}
+
+.intro-item {
+  text-align: center;
 }
 
 .s-3 .col-6 {
@@ -598,6 +609,7 @@ header {
   font-size: 60px;
   font-weight: 700;
   line-height: 100%;
+  font-family: brownvn;
   margin: 0;
 }
 
@@ -630,7 +642,7 @@ header {
 
 .form table {
   background: linear-gradient(180deg, #ffca54 10.2%, #ff8d3c 159.61%);
-  border-radius: 20px;
+  border-radius: 50px;
   font-size: 35px;
   color: #fff;
   font-weight: 700;
@@ -640,9 +652,15 @@ header {
 
 .form .title {
   margin-bottom: 30px;
+  text-shadow: 0px 0px 5px #ff8400;
 }
 
-.form input {
+.form .title-mobile {
+  display: none;
+}
+
+.form input,
+.form select {
   width: 100%;
   height: 75px;
   background-color: #fff;
@@ -654,11 +672,26 @@ header {
   padding-left: 20px;
 }
 
+/* Custom select icon */
+.form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position-x: 94%;
+  background-position-y: 22px;
+}
+
+.form option {
+  padding: 5px 10px;
+}
+
 .sdt_input {
   width: 350px;
 }
 
-.form input:focus-visible {
+.form input:focus-visible,
+select:focus-visible {
   outline: none;
 }
 
@@ -710,4 +743,281 @@ footer .icon {
 footer .copyright {
   padding-bottom: 40px;
   border-top: 1px solid #efefef;
+}
+
+.label-mb {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 30px !important;
+    text-align: center;
+    line-height: 120%;
+    margin: 10px 0;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .font-smaller {
+    font-size: 20px;
+    display: block;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header .logo {
+    display: flex;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    justify-content: center;
+  }
+
+  .menu .active {
+    background-color: #fff;
+    color: #8464e5;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 400;
+  }
+
+  header .menu ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  header .menu a {
+    font-size: 10px;
+  }
+
+  header img {
+    width: 120px;
+  }
+
+  header .btn {
+    display: none;
+  }
+
+  header .border-right {
+    border: none;
+  }
+
+  .intro-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+    border: 1px solid #b776f9;
+    height: 116px;
+    padding: 0 35px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+
+  .intro-item p {
+    margin: 20px 0 0 0;
+  }
+
+  .intro-item > img {
+    width: 60px;
+    border-radius: 50%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .s-3-container {
+    flex-direction: column-reverse;
+  }
+
+  .s-3 p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 180%;
+  }
+  .s-4 img.p-absolute {
+    display: none;
+  }
+
+  .s-3 .content {
+    z-index: 1;
+    padding-top: 0;
+    transform: translateY(-35%);
+  }
+
+  .s-4 .card {
+    border-radius: 40px 40px 0 0;
+  }
+
+  .s-4 .card-header {
+    padding: 8px 30px;
+    align-items: center;
+  }
+
+  .s-4 .card-header p {
+    font-size: 20px;
+  }
+
+  .s-4 .card-header img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .s-4 .card-content p {
+    font-size: 14px;
+  }
+
+  .benefit img.p-absolute {
+    display: none;
+  }
+
+  .chat-number {
+    width: 67px;
+    height: 67px;
+    font-size: 50px;
+  }
+
+  .benefit .chat-box {
+    padding-top: 0;
+  }
+
+  .benefit .chat,
+  .chat-right {
+    font-size: 18px;
+    border-radius: 50px 50px 0 50px !important;
+  }
+
+  .benefit .btn-group {
+    margin-top: 30px;
+  }
+
+  .kid-feedback .video {
+    height: 187px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .feedback-title {
+    font-size: 18px;
+    justify-content: center;
+  }
+
+  .feedback-title img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feedback-content {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .kid-feedback .btn-group {
+    display: none;
+  }
+
+  .plans {
+    padding-bottom: 0;
+  }
+
+  .plan-card {
+    border-radius: 50px 50px 0 0;
+    margin-bottom: 30px;
+  }
+
+  .plan-card .card-title {
+    font-size: 24px;
+  }
+
+  .plan-card .card-header {
+    align-items: center;
+    padding: 12px;
+  }
+
+  .plan-card .card-header img {
+    width: 76px;
+    height: 76px;
+  }
+
+  .plan-card .card-sub-title {
+    font-size: 20px;
+  }
+
+  .plan-card .card-content {
+    padding: 20px;
+  }
+
+  .plan-card .card-content .item {
+    display: none;
+  }
+
+  .plan-card .price {
+    font-size: 55px;
+  }
+
+  .form .title {
+    display: none;
+  }
+
+  .form .title-mobile {
+    display: block;
+    font-size: 20px !important;
+    margin-bottom: 10px;
+  }
+
+  .form .robot {
+    width: 50px;
+  }
+
+  .form .table-label {
+    display: none;
+  }
+
+  .form input,
+  .form select,
+  .form .btn {
+    height: 36px;
+    border-radius: 50px;
+    font-size: 14px;
+    padding-left: 10px;
+    float: left;
+  }
+
+  .form .btn {
+    padding-left: 30px;
+    margin-top: 22px;
+  }
+
+  .sdt_input {
+    width: 35%;
+  }
+
+  .text-right {
+    font-size: 0px;
+  }
+
+  .form select {
+    background-position: 95% 50%;
+    background-image: url("../img/icon-arrow-mb.svg");
+  }
+
+  .label-mb {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
 }
