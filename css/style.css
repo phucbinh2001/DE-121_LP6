@@ -8,35 +8,45 @@
 /* IMPORT FONT */
 @font-face {
   font-family: "avenir";
-  src: url("../fonts/ttf/avenirnextregular08.ttf") format("truetype");
+  src: url("../fonts/ttf/avenirnextregular08.ttf") format("truetype"),
+    url("../fonts/eot/avenirnextregular08.eot") format("embedded-opentype"),
+    url("../fonts/woff/avenirnextregular08.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "avenir";
-  src: url("../fonts/ttf/avenirnextmedium06.ttf") format("truetype");
+  src: url("../fonts/ttf/avenirnextmedium06.ttf") format("truetype"),
+    url("../fonts/eot/avenirnextmedium06.eot") format("embedded-opentype"),
+    url("../fonts/woff/avenirnextmedium06.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "avenir";
-  src: url("../fonts/ttf/avenirnextdemibold03.ttf") format("truetype");
+  src: url("../fonts/ttf/avenirnextdemibold03.ttf") format("truetype"),
+    url("../fonts/eot/avenirnextdemibold03.eot") format("embedded-opentype"),
+    url("../fonts/woff/avenirnextdemibold03.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "avenir";
-  src: url("../fonts/ttf/brownbold.ttf") format("truetype");
+  src: url("../fonts/ttf/brownbold.ttf") format("truetype"),
+    url("../fonts/eot/brownbold.eot") format("embedded-opentype"),
+    url("../fonts/woff/brownbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "avenir";
-  src: url("../fonts/ttf/avenirnextbold01.ttf") format("truetype");
+  src: url("../fonts/ttf/avenirnextbold01.ttf") format("truetype"),
+    url("../fonts/eot/avenirnextbold01.eot") format("embedded-opentype"),
+    url("../fonts/woff/avenirnextbold01.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -326,9 +336,9 @@ header {
 }
 
 .benefit {
-  margin-top: 200px;
+  margin-top: 150px;
   padding-top: 100px;
-  background-image: url("../img/screenshots/loiich.png");
+  /* background-image: url("../img/screenshots/loiich.png"); */
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 800px;
@@ -340,8 +350,15 @@ header {
   top: 0;
 }
 
+.benefit .image {
+  width: 600px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
 .benefit .title {
   color: #00bae8;
+  margin-top: 0;
 }
 
 .benefit .chat-box {
@@ -418,7 +435,7 @@ header {
 }
 
 .benefit .btn-group {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .kid-feedback {
@@ -487,6 +504,7 @@ header {
 
 .parents-feedback {
   padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .parents-feedback .row {
@@ -588,15 +606,21 @@ header {
 }
 
 .price-blue {
-  color: #4ed1ff;
+  background: linear-gradient(180deg, #4ed1ff 0%, #229cef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .price-orange {
-  color: #ff7502;
+  background: linear-gradient(180deg, #fba80a 0%, #ef7217 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .price-purple {
-  color: #8765e6;
+  background: linear-gradient(180deg, #be7afd 0%, #8765e6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .form-box {
