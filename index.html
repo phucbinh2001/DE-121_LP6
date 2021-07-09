@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap-grid.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -628,83 +627,78 @@
                 <div class="col-12 form p-relative">
                     <img src="./img/item3.svg" alt="" class="robot
                             p-absolute">
-                    <form method="post" name="register">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td colspan="4">
-                                        <h2 class="text-center title">QUYẾT ĐỊNH
-                                            CỦA BẠN - TƯƠNG LAI CHO BÉ</h2>
-                                        <h2 class="text-center title title-mobile">QUYẾT ĐỊNH
-                                            CỦA BẠN <br> TƯƠNG LAI CHO BÉ</h2>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-label pb-20">Tên phụ huynh</td>
-                                    <td colspan="3">
-                                        <label for="tenph" class="label-mb">Tên phụ huynh</label>
-                                        <input type="text" name="tenph" id="tenph">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-label pb-20">Số điện thoại</td>
-                                    <td class="sdt_input">
-                                        <label for="sdt" class="label-mb">Số điện thoại</label>
-                                        <input type="text" name="sdt" id="sdt">
-                                    </td>
-                                    <td class="text-right pb-20">Email</td>
-                                    <td><label for="email" class="label-mb">Email</label>
-                                        <input type="text" name="email" id="email">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-label pb-20">Gói học đăng
-                                        ký</td>
-                                    <td colspan="3">
-                                        <label for="membership" class="label-mb">Gói học đăng ký</label>
-                                        <select name="membership" id="membership">
-                                            <option value=“three_months_credit”>Gói 3 tháng</option>
-                                            <option value=“six_months_credit”>Gói 6 tháng</option>
-                                            <option value="one_year_credit">Gói 1 năm</option>
-                                            <option value="two_years_credit">Gói 2 năm</option>
-                                            <option value="lifetime_membership">Gói trọn đời</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-label pb-20">Tên bé</td>
-                                    <td colspan="3">
-                                        <label for="tenbe" class="label-mb">Tên bé</label>
-                                        <input type="text" name="tenbe" id="tenbe">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-label pb-20">Tuổi bé</td>
-                                    <td>
-                                        <label for="children_old" class="label-mb">Tuổi bé</label>
-                                        <select name="children_old" id="children_old">
-                                            <option value="">Chọn tuổi bé</option>
-                                            <option value="6">6 tuổi</option>
-                                            <option value="7">7 tuổi</option>
-                                            <option value="8">8 tuổi</option>
-                                            <option value="9">9 tuổi</option>
-                                            <option value="10">10 tuổi</option>
-                                            <option value="11">11 tuổi</option>
-                                            <option value="12">12 tuổi</option>
-                                            <option value="13">13 tuổi</option>
-                                            <option value="14">14 tuổi</option>
-                                            <option value="15">15 tuổi</option>
-                                        </select>
-                                    </td>
-                                    <td>&nbsp;</td>
-                                    <td><button type="submit" class="btn btn-blue
-                                            btn-table">ĐĂNG KÝ NGAY</button></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <form class="form-elsa" action="https://elsaspeak.com/new-payment" method="POST" name="register">
+                        <div class="table">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="text-center title">QUYẾT ĐỊNH
+                                        CỦA BẠN - TƯƠNG LAI CHO BÉ</h2>
+                                    <h2 class="text-center title title-mobile">QUYẾT ĐỊNH
+                                        CỦA BẠN <br> TƯƠNG LAI CHO BÉ</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 label-box">Tên phụ huynh</div>
+                                <div class="col-lg-9 col-12"><label for="tenph" class="label-mb">Tên phụ huynh</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 label-box">Số điện thoại</div>
+                                <div class="col-lg-3 col-5"><label for="tenph" class="label-mb">Số điện thoại</label>
+                                    <input type="text" name="phone" id="phone">
+                                </div>
+                                <div class="col-1 label-box">Email</div>
+                                <div class="col-lg-5 col-7">
+                                    <label for="email" class="label-mb">Email</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 label-box">Gói học đăng ký</div>
+                                <div class="col-lg-9 col-12">
+                                    <label for="membership" class="label-mb">Gói học đăng ký</label>
+                                    <select name="membership" id="membership">
+                                        <option value=“three_months_credit”>Gói 3 tháng</option>
+                                        <option value=“six_months_credit”>Gói 6 tháng</option>
+                                        <option value="one_year_credit">Gói 1 năm</option>
+                                        <option value="two_years_credit">Gói 2 năm</option>
+                                        <option value="lifetime_membership">Gói trọn đời</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 label-box">Tên bé</div>
+                                <div class="col-lg-9 col-12"><label for="children_name" class="label-mb">Tên bé</label>
+                                    <input type="text" name="children_name" id="children_name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 label-box">Tuổi bé</div>
+                                <div class="col-lg-3 col-5">
+                                    <label for="children_old" class="label-mb">Tuổi bé</label>
+                                    <select name="children_old" id="children_old">
+                                        <option value="">Chọn tuổi bé</option>
+                                        <option value="6">6 tuổi</option>
+                                        <option value="7">7 tuổi</option>
+                                        <option value="8">8 tuổi</option>
+                                        <option value="9">9 tuổi</option>
+                                        <option value="10">10 tuổi</option>
+                                        <option value="11">11 tuổi</option>
+                                        <option value="12">12 tuổi</option>
+                                        <option value="13">13 tuổi</option>
+                                        <option value="14">14 tuổi</option>
+                                        <option value="15">15 tuổi</option>
+                                    </select>
+                                </div>
+                                <div class="col-1 label-box"></div>
+                                <div class="col-lg-5 col-7"><button type="submit" class="btn btn-blue btn-table">ĐĂNG KÝ
+                                        NGAY</button>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
