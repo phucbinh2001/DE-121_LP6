@@ -628,80 +628,81 @@
                 <div class="col-12 form p-relative">
                     <img src="./img/item3.svg" alt="" class="robot
                             p-absolute">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td colspan="4">
-                                    <h2 class="text-center title">QUYẾT ĐỊNH
-                                        CỦA BẠN - TƯƠNG LAI CHO BÉ</h2>
-                                    <h2 class="text-center title title-mobile">QUYẾT ĐỊNH
-                                        CỦA BẠN <br> TƯƠNG LAI CHO BÉ</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-label pb-20">Tên phụ huynh</td>
-                                <td colspan="3">
-                                    <label for="tenph" class="label-mb">Tên phụ huynh</label>
-                                    <input type="text" name="" id="tenph">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-label pb-20">Số điện thoại</td>
-                                <td class="sdt_input">
-                                    <label for="sdt" class="label-mb">Số điện thoại</label>
-                                    <input type="text" name="" id="sdt">
-                                </td>
-                                <td class="text-right pb-20">Email</td>
-                                <td><label for="email" class="label-mb">Email</label>
-                                    <input type="text" name="" id="email">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-label pb-20">Gói học đăng
-                                    ký</td>
-                                <td colspan="3">
-                                    <label for="goihoc" class="label-mb">Gói học đăng ký</label>
-                                    <select name=“membership” id="goihoc">
-                                        <option value="">Mời chọn gói</option>
-                                        <option value=“three_months_credit”>Gói 3 tháng</option>
-                                        <option value=“six_months_credit”>Gói 6 tháng</option>
-                                        <option value="one_year_credit">Gói 1 năm</option>
-                                        <option value="two_years_credit">Gói 2 năm</option>
-                                        <option value="lifetime_membership">Gói trọn đời</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-label pb-20">Tên bé</td>
-                                <td colspan="3">
-                                    <label for="tenbe" class="label-mb">Tên bé</label>
-                                    <input type="text" name="" id="tenbe">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-label pb-20">Tuổi bé</td>
-                                <td>
-                                    <label for="tuoibe" class="label-mb">Tuổi bé</label>
-                                    <select name=“children_old” id="tuoibe">
-                                        <option value="">Chọn tuổi </option>
-                                        <option value="6">6 tuổi</option>
-                                        <option value="7">7 tuổi</option>
-                                        <option value="8">8 tuổi</option>
-                                        <option value="9">9 tuổi</option>
-                                        <option value="10">10 tuổi</option>
-                                        <option value="11">11 tuổi</option>
-                                        <option value="12">12 tuổi</option>
-                                        <option value="13">13 tuổi</option>
-                                        <option value="14">14 tuổi</option>
-                                        <option value="15">15 tuổi</option>
-                                    </select>
-                                </td>
-                                <td>&nbsp;</td>
-                                <td><a href="" class="btn btn-blue
-                                            btn-table">ĐĂNG KÝ NGAY</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <form method="post" name="register">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        <h2 class="text-center title">QUYẾT ĐỊNH
+                                            CỦA BẠN - TƯƠNG LAI CHO BÉ</h2>
+                                        <h2 class="text-center title title-mobile">QUYẾT ĐỊNH
+                                            CỦA BẠN <br> TƯƠNG LAI CHO BÉ</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-label pb-20">Tên phụ huynh</td>
+                                    <td colspan="3">
+                                        <label for="tenph" class="label-mb">Tên phụ huynh</label>
+                                        <input type="text" name="tenph" id="tenph">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-label pb-20">Số điện thoại</td>
+                                    <td class="sdt_input">
+                                        <label for="sdt" class="label-mb">Số điện thoại</label>
+                                        <input type="text" name="sdt" id="sdt">
+                                    </td>
+                                    <td class="text-right pb-20">Email</td>
+                                    <td><label for="email" class="label-mb">Email</label>
+                                        <input type="text" name="email" id="email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-label pb-20">Gói học đăng
+                                        ký</td>
+                                    <td colspan="3">
+                                        <label for="membership" class="label-mb">Gói học đăng ký</label>
+                                        <select name="membership" id="membership">
+                                            <option value=“three_months_credit”>Gói 3 tháng</option>
+                                            <option value=“six_months_credit”>Gói 6 tháng</option>
+                                            <option value="one_year_credit">Gói 1 năm</option>
+                                            <option value="two_years_credit">Gói 2 năm</option>
+                                            <option value="lifetime_membership">Gói trọn đời</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-label pb-20">Tên bé</td>
+                                    <td colspan="3">
+                                        <label for="tenbe" class="label-mb">Tên bé</label>
+                                        <input type="text" name="tenbe" id="tenbe">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-label pb-20">Tuổi bé</td>
+                                    <td>
+                                        <label for="children_old" class="label-mb">Tuổi bé</label>
+                                        <select name="children_old" id="children_old">
+                                            <option value="">Chọn tuổi bé</option>
+                                            <option value="6">6 tuổi</option>
+                                            <option value="7">7 tuổi</option>
+                                            <option value="8">8 tuổi</option>
+                                            <option value="9">9 tuổi</option>
+                                            <option value="10">10 tuổi</option>
+                                            <option value="11">11 tuổi</option>
+                                            <option value="12">12 tuổi</option>
+                                            <option value="13">13 tuổi</option>
+                                            <option value="14">14 tuổi</option>
+                                            <option value="15">15 tuổi</option>
+                                        </select>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td><button type="submit" class="btn btn-blue
+                                            btn-table">ĐĂNG KÝ NGAY</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
                 </div>
 
             </div>
@@ -768,6 +769,10 @@
             },
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="./js/validation.js"></script>
 </body>
 
 </html>

@@ -73,6 +73,16 @@ body {
   font-weight: 300;
 }
 
+button {
+  border: none;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  font-weight: normal;
+}
+
 .mobile {
   display: none;
 }
@@ -683,6 +693,19 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
+label.error {
+  z-index: 0;
+  position: absolute;
+  bottom: 77%;
+  width: 100%;
+  font-size: 16px;
+  left: 30px;
+}
+
+table td {
+  position: relative;
+}
+
 .form-box {
   padding: 170px 0 100px;
   margin-top: 130px;
@@ -708,6 +731,11 @@ header {
   display: none;
 }
 
+input.error {
+  border: 2px solid red;
+  box-shadow: none;
+}
+
 .form input,
 .form select {
   width: 100%;
@@ -719,6 +747,7 @@ header {
   margin-bottom: 20px;
   font-size: 35px;
   padding-left: 20px;
+  color: #000;
 }
 
 /* Custom select icon */
