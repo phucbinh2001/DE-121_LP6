@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script type="edb31f74b57526f6cb867b68-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PLTDG4D');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,44 +18,87 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Facebook -->
+    <script type="5ee809cd038104ff2fb53309-text/javascript">
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '325175681738700');
+        fbq('track', 'PageView');
+    </script>
+
+    <!-- GACODE -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123524315-1"></script>
+    <script type="edb31f74b57526f6cb867b68-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-123524315-1');
+    </script>
+    <script>
+    </script>
 </head>
 
 <body>
-    <div class="bg-banner">
-        <header>
-            <div class="container-fluid">
-                <div class="row justify-content-between align-items-center">
-                    <div class="logo col-lg-2 col-12 border-right">
-                        <a href="#"><img src="./img/logo.svg" alt=""></a>
-                    </div>
-                    <div class="col-lg-10 col-12 menu">
-                        <ul class="d-flex menu justify-content-between
-                            align-items-center">
-                            <li>
-                                <a class="active" href="#gioi-thieu">Giới thiệu</a>
-                            </li>
-                            <li>
-                                <a href="#loi-ich">Lợi ích </a>
-                            </li>
-                            <li>
-                                <a href="#cach-hoc">Cách học</a>
-                            </li>
-                            <li>
-                                <a href="#cam-nhan-phu-huynh">Cảm nhận phụ huynh</a>
-                            </li>
-                            <li>
-                                <a href="#goi-hoc">Gói học</a>
-                            </li>
-                            <li>
-                                <a class="btn btn-orange" href="#dang-ky">ĐĂNG
-                                    KÝ NGAY</a>
-                            </li>
-                        </ul>
-                    </div>
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLTDG4D" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRJZVD3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header id="navbar">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+                <div class="logo col-lg-2 col-12 border-right">
+                    <a href="#"><img src="./img/logo.svg" alt=""></a>
                 </div>
+                <div class="col-lg-10 col-12 menu">
+                    <ul class="d-flex menu justify-content-between
+                            align-items-center">
+                        <li>
+                            <a class="active" href="#gioi-thieu">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#loi-ich">Lợi ích </a>
+                        </li>
+                        <li>
+                            <a href="#cach-hoc">Cách học</a>
+                        </li>
+                        <li>
+                            <a href="#cam-nhan-phu-huynh">Cảm nhận phụ huynh</a>
+                        </li>
+                        <li>
+                            <a href="#goi-hoc">Gói học</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-orange" href="#dang-ky">ĐĂNG
+                                KÝ NGAY</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-        </header>
+        </div>
+    </header>
+
+    <div class="bg-banner">
         <section class="banner">
             <div class="container-fluid">
                 <div class="row p-relative align-items-start">
@@ -55,7 +106,8 @@
                         <h2 class="title"><span class="small-size">ĐẦU TƯ NỀN
                                 TẢNG <span class="yellow"> PHÁT ÂM
                                     CHUẨN</span></span><br>CHO BÉ NGAY TỪ NHỎ</h2>
-                        <div class="text-center btn-mobile"><a href="" class="btn btn-blue ">ĐĂNG KÝ NGAY</a></div>
+                        <div class="text-center btn-mobile"><a href="#dang-ky" class="btn btn-blue ">ĐĂNG KÝ NGAY</a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-12 phone-banner"><img src="./img/screenshots/section1.png" alt=""></div>
                 </div>
@@ -118,8 +170,8 @@
                     </p>
                     <div class="row btn-group align-items-center
                             justify-content-center">
-                        <a class="btn btn-orange mr-20">TÌM HIỂU THÊM</a>
-                        <a class="btn btn-blue">ĐĂNG KÝ NGAY</a>
+                        <a class="btn btn-orange mr-20" href="#section-4">TÌM HIỂU THÊM</a>
+                        <a href="#dang-ky" class="btn btn-blue">ĐĂNG KÝ NGAY</a>
                     </div>
 
                 </div>
@@ -129,7 +181,7 @@
             </div>
         </div>
     </section>
-    <section class="s-4 p-relative">
+    <section class="s-4 p-relative" id="section-4">
         <img class="p-absolute img" src="./img/tenluavabegai.svg" alt="">
         <div class="container-fluid">
             <h2 class="title text-center">BÉ HỌC ĐƯỢC GÌ <span class="font-smaller">VỚI ELSA SPEAK ?</span></h2>
@@ -197,8 +249,8 @@
                     justify-content-center">
                 <div class="col-lg-10 col-12 d-flex align-items-center
                     justify-content-around">
-                    <a class="btn btn-orange mr-20">TÌM HIỂU THÊM</a>
-                    <a class="btn btn-blue">ĐĂNG KÝ NGAY</a>
+                    <a class="btn btn-orange mr-20" href="#loi-ich">TÌM HIỂU THÊM</a>
+                    <a href="#dang-ky" class="btn btn-blue">ĐĂNG KÝ NGAY</a>
                 </div>
 
             </div>
@@ -259,8 +311,8 @@
             </div>
             <div class="row btn-group align-items-center
                     justify-content-center">
-                <a class="btn btn-orange mr-20">TÌM HIỂU THÊM</a>
-                <a class="btn btn-blue">ĐĂNG KÝ NGAY</a>
+                <a class="btn btn-orange mr-20" href="#cach-hoc">TÌM HIỂU THÊM</a>
+                <a href="#dang-ky" class="btn btn-blue">ĐĂNG KÝ NGAY</a>
             </div>
         </div>
     </section>
@@ -329,12 +381,12 @@
             </div>
             <div class="row btn-group align-items-center
                     justify-content-center">
-                <a class="btn btn-orange mr-20">TÌM HIỂU THÊM</a>
-                <a class="btn btn-blue">ĐĂNG KÝ NGAY</a>
+                <a class="btn btn-orange mr-20" href="#cam-nhan-phu-huynh">TÌM HIỂU THÊM</a>
+                <a class="btn btn-blue" href="#dang-ky">ĐĂNG KÝ NGAY</a>
             </div>
         </div>
     </section>
-    <section class="slide-mobile mobile">
+    <section class="slide-mobile mobile" id="cam-nhan-phu-huynh">
         <h2 class="title">
             BA MẸ NÓI GÌ <span class="font-smaller">VỀ ELSA SPEAK ?</span>
         </h2>
@@ -420,8 +472,8 @@
         <div class="container-fluid">
             <div class="row btn-group align-items-center
                         justify-content-center">
-                <a class="btn btn-orange mr-20">TÌM HIỂU THÊM</a>
-                <a class="btn btn-blue">ĐĂNG KÝ NGAY</a>
+                <a class="btn btn-orange mr-20" href="href=" #cam-nhan-phu-huynh"">TÌM HIỂU THÊM</a>
+                <a class="btn btn-blue" href="#dang-ky">ĐĂNG KÝ NGAY</a>
             </div>
         </div>
 
@@ -505,8 +557,8 @@
                 </div>
                 <div class="row btn-group align-items-center
                         justify-content-center">
-                    <a class="btn btn-orange mr-20">TÌM HIỂU THÊM</a>
-                    <a class="btn btn-blue">ĐĂNG KÝ NGAY</a>
+                    <a class="btn btn-orange mr-20" href="#goi-hoc">TÌM HIỂU THÊM</a>
+                    <a class="btn btn-blue" href="#dang-ky">ĐĂNG KÝ NGAY</a>
                 </div>
             </div>
         </div>
@@ -544,8 +596,8 @@
                                     độ</p>
                             </div>
                             <div class="text-center">
-                                <a href="" class="btn btn-orange
-                                        text-center">ĐĂNG KÝ NGAY</a>
+                                <a class="btn btn-orange
+                                        text-center" href="#dang-ky">ĐĂNG KÝ NGAY</a>
                             </div>
                         </div>
                     </div>
@@ -578,7 +630,7 @@
                                     độ</p>
                             </div>
                             <div class="text-center">
-                                <a href="" class="btn btn-blue text-center">ĐĂNG
+                                <a href="#dang-ky" class="btn btn-blue text-center">ĐĂNG
                                     KÝ NGAY</a>
                             </div>
                         </div>
@@ -612,7 +664,7 @@
                                     độ</p>
                             </div>
                             <div class="text-center">
-                                <a href="" class="btn btn-purple
+                                <a href="#dang-ky" class="btn btn-purple
                                         text-center">ĐĂNG KÝ NGAY</a>
                             </div>
                         </div>
@@ -767,6 +819,7 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
     <script src="./js/validation.js"></script>
+    <script src="./js/handleNavBar.js"></script>
 </body>
 
 </html>
