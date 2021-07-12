@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <!-- Google Tag Manager -->
@@ -13,7 +13,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ELSA - Phần mềm tiếng Anh cho bé</title>
+    <base href="./">
+    <link rel="icon" type="image/svg" href="./img/fav-icon.svg" />
     <link rel="stylesheet" href="./css/bootstrap-grid.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -66,8 +68,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <header id="navbar">
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div class="logo col-lg-2 col-12 border-right">
-                    <a href="#"><img src="./img/logo.svg" alt=""></a>
+                <div class="logo col-lg-2 col-12 d-flex align-items-center justify-content-center border-right">
+                    <a href="#"><img style="float: left;" src="./img/logo.svg" alt=""></a>
                 </div>
                 <div class="col-lg-10 col-12 menu">
                     <ul class="d-flex menu justify-content-between
@@ -76,7 +78,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <a class="active" href="#gioi-thieu">Giới thiệu</a>
                         </li>
                         <li>
-                            <a href="#loi-ich">Lợi ích </a>
+                            <a onclick="hideNav()" href="#loi-ich">Lợi ích </a>
                         </li>
                         <li>
                             <a href="#cach-hoc">Cách học</a>
@@ -327,6 +329,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MxYkaIuE6DI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 feedback">
@@ -345,7 +351,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="video">
-
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dpNgZhL0vRQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 feedback">
@@ -367,7 +376,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="video">
-
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QPzohVhEts0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 feedback">
@@ -601,7 +613,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </div>
                             <div class="text-center">
                                 <a class="btn btn-orange
-                                        text-center" href="#dang-ky">ĐĂNG KÝ NGAY</a>
+                                        text-center" onclick="selectPlan('lifetime_membership')" href=" #dang-ky">ĐĂNG
+                                    KÝ NGAY</a>
                             </div>
                         </div>
                     </div>
@@ -634,7 +647,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     độ</p>
                             </div>
                             <div class="text-center">
-                                <a href="#dang-ky" class="btn btn-blue text-center">ĐĂNG
+                                <a href="#dang-ky" onclick="selectPlan('one_year_credit')"
+                                    class="btn btn-blue text-center">ĐĂNG
                                     KÝ NGAY</a>
                             </div>
                         </div>
@@ -668,7 +682,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     độ</p>
                             </div>
                             <div class="text-center">
-                                <a href="#dang-ky" class="btn btn-purple
+                                <a href="#dang-ky" onclick="selectPlan('two_years_credit')" class="btn btn-purple
                                         text-center">ĐĂNG KÝ NGAY</a>
                             </div>
                         </div>
@@ -715,8 +729,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col-lg-9 col-12">
                                     <label for="membership" class="label-mb">Gói học đăng ký</label>
                                     <select name="membership" id="membership">
-                                        <option value="three_months_credit">Gói 3 tháng</option>
-                                        <option value="six_months_credit">Gói 6 tháng</option>
                                         <option value="one_year_credit">Gói 1 năm</option>
                                         <option value="two_years_credit">Gói 2 năm</option>
                                         <option value="lifetime_membership">Gói trọn đời</option>
@@ -735,16 +747,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     <label for="children_old" class="label-mb">Tuổi bé</label>
                                     <select name="children_old" id="children_old">
                                         <option value="">Chọn tuổi bé</option>
-                                        <option value="6">6 tuổi</option>
-                                        <option value="7">7 tuổi</option>
-                                        <option value="8">8 tuổi</option>
-                                        <option value="9">9 tuổi</option>
-                                        <option value="10">10 tuổi</option>
-                                        <option value="11">11 tuổi</option>
-                                        <option value="12">12 tuổi</option>
-                                        <option value="13">13 tuổi</option>
-                                        <option value="14">14 tuổi</option>
-                                        <option value="15">15 tuổi</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
                                     </select>
                                 </div>
                                 <div class="col-1 label-box">
@@ -839,7 +851,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
     <script src="./js/validation.js"></script>
-    <script src="./js/handleNavBar.js"></script>
+    <script src="./js/handleSelectPlan.js"></script>
 </body>
 
 </html>
