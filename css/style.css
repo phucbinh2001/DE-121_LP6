@@ -71,6 +71,7 @@ body {
   margin: 0;
   font-family: avenir;
   font-weight: 300;
+  font-size: 24px;
 }
 
 button,
@@ -158,6 +159,7 @@ img {
 
 .bg-banner {
   background-image: url("../img/background-banner.jpg");
+  background-size: 100% 100%;
 }
 
 header {
@@ -221,13 +223,35 @@ header {
   font-size: 40px;
 }
 
+.clound {
+  height: 50px;
+  width: auto;
+}
+
+.clound1 {
+  left: 20px;
+  top: 30%;
+}
+.clound2 {
+  left: 45%;
+  bottom: 10px;
+  opacity: 0.5;
+}
+
+.tenlua-bn {
+  height: 196px;
+  bottom: 0;
+  left: 20px;
+  width: auto;
+}
+
 .phone-banner {
-  transform: scale(1.3) translateX(-20%) translateY(calc(20% + 3px));
+  transform: scale(1.4) translateX(-13%) translateY(20%);
   z-index: 1;
 }
 
 .deal {
-  margin-top: 3px;
+  margin-top: 10px;
 }
 
 .deal-mobile,
@@ -236,11 +260,7 @@ header {
 }
 
 .introduction {
-  padding: 60px 0;
-}
-
-.introduction p {
-  font-weight: 300;
+  padding: 60px 40px;
 }
 
 .introduction .col-4 {
@@ -263,11 +283,17 @@ header {
 }
 
 .introduction img {
-  width: 50%;
+  width: 180px;
+  height: 180px;
 }
 
 .intro-item {
   text-align: center;
+  padding: 0;
+}
+
+section.s-3 {
+  padding: 0 0 200px 0;
 }
 
 .s-3 .col-6 {
@@ -277,6 +303,14 @@ header {
 .s-3 h2 {
   font-size: 40px;
   color: #8162e3;
+  text-align: center;
+  margin: 0;
+}
+
+.s-3 .content {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -842,6 +876,10 @@ footer .bct {
 /* RESPONSIVE */
 
 @media only screen and (max-width: 990px) {
+  body {
+    font-size: 14px;
+  }
+
   .mobile {
     display: block;
   }
@@ -965,7 +1003,7 @@ footer .bct {
     transform: unset;
   }
   .introduction {
-    padding: 60px 10px;
+    padding: 60px 10px 0;
   }
 
   .intro-item {
@@ -996,14 +1034,23 @@ footer .bct {
     transform: translateX(-50%) translateY(-50%);
   }
 
+  section.s-3 {
+    padding: 0;
+  }
+
   .s-3-container {
     flex-direction: column-reverse;
+    padding: 40px 0;
   }
 
   .s-3 p {
     font-size: 14px;
     text-align: center;
     line-height: 180%;
+  }
+
+  .s-3 .btn-group {
+    margin-bottom: 40px;
   }
 
   .s-4 {
@@ -1018,7 +1065,6 @@ footer .bct {
   .s-3 .content {
     z-index: 1;
     padding-top: 0;
-    transform: translateY(-35%);
   }
 
   .s-4 .card {
@@ -1045,6 +1091,14 @@ footer .bct {
 
   .s-4 .card-content p {
     font-size: 14px;
+  }
+
+  .s-4 .item {
+    margin-bottom: 12px;
+  }
+
+  .s-4 p {
+    margin: 0 10px 0 0;
   }
 
   .benefit {
