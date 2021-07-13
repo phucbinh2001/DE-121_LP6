@@ -3,11 +3,14 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <script type="edb31f74b57526f6cb867b68-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PLTDG4D');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PLTDG4D');</script>
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
@@ -22,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- Facebook -->
-    <script type="5ee809cd038104ff2fb53309-text/javascript">
+    <script>
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return;
             n = f.fbq = function () {
@@ -47,9 +50,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- GACODE -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123524315-1"></script>
-    <script type="edb31f74b57526f6cb867b68-text/javascript">
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-123524315-1');
@@ -78,7 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <a class="active" href="#gioi-thieu">Giới thiệu</a>
                         </li>
                         <li>
-                            <a onclick="hideNav()" href="#loi-ich">Lợi ích </a>
+                            <a href="#loi-ich">Lợi ích </a>
                         </li>
                         <li>
                             <a href="#cach-hoc">Cách học</a>
@@ -129,7 +132,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <section class="deal-mobile">
         <img src="./img/deal-mobile.svg" alt="">
     </section>
-    <section class="introduction" id="gioi-thieu">
+    <section class="introduction">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-4 intro-item">
@@ -153,7 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
     </section>
-    <section class="s-3">
+    <section class="s-3" id="gioi-thieu">
         <div class="container">
             <div class="row s-3-container">
                 <div class="col-lg-6 col-12 content">
@@ -186,68 +189,70 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
     </section>
-    <section class="s-4 p-relative" id="section-4">
-        <img class="p-absolute img" src="./img/tenluavabegai.svg" alt="">
-        <div class="container">
-            <h2 class="title text-center">BÉ HỌC ĐƯỢC GÌ <span class="font-smaller">VỚI ELSA SPEAK ?</span></h2>
-            <div class="row justify-content-center card-group">
-                <div class="col-lg-5 col-12">
-                    <div class="card card1">
-                        <div class="card-header d-flex card-orange">
-                            <img src="./img/robot_orange.jpg" alt="">
-                            <p>Học với công nghệ <br>
-                                trí tuệ nhân tạo AI</p>
-                        </div>
-                        <div class="card-content">
-                            <div class="item"><span class="orange-dot dot"></span>
-                                <p>Chỉnh
-                                    sửa phát âm đến từng âm tiết</p>
+    <div class="anchor mobile-non-anchor" id="section-4">
+        <section class="s-4 p-relative">
+            <img class="p-absolute img" src="./img/tenluavabegai.svg" alt="">
+            <div class="container">
+                <h2 class="title text-center">BÉ HỌC ĐƯỢC GÌ <span class="font-smaller">VỚI ELSA SPEAK ?</span></h2>
+                <div class="row justify-content-center card-group">
+                    <div class="col-lg-5 col-12">
+                        <div class="card card1">
+                            <div class="card-header d-flex card-orange">
+                                <img src="./img/robot_orange.jpg" alt="">
+                                <p>Học với công nghệ <br>
+                                    trí tuệ nhân tạo AI</p>
                             </div>
-                            <div class="item"><span class="orange-dot dot"></span>
-                                <p>Công
-                                    nghệ AI Top 5 thế giới</p>
-                            </div>
-                            <div class="item"><span class="orange-dot dot"></span>
-                                <p>Cá nhân
-                                    hóa lộ trình học</p>
-                            </div>
-                            <div class="item"><span class="orange-dot dot"></span>
-                                <p>Phát âm
-                                    theo giọng Mỹ</p>
+                            <div class="card-content">
+                                <div class="item"><span class="orange-dot dot"></span>
+                                    <p>Chỉnh
+                                        sửa phát âm đến từng âm tiết</p>
+                                </div>
+                                <div class="item"><span class="orange-dot dot"></span>
+                                    <p>Công
+                                        nghệ AI Top 5 thế giới</p>
+                                </div>
+                                <div class="item"><span class="orange-dot dot"></span>
+                                    <p>Cá nhân
+                                        hóa lộ trình học</p>
+                                </div>
+                                <div class="item"><span class="orange-dot dot"></span>
+                                    <p>Phát âm
+                                        theo giọng Mỹ</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-5 col-12">
-                    <div class="card">
-                        <div class="card-header d-flex card-blue">
-                            <img src="./img/apple.jpg" alt="">
-                            <p>Kho bài học <br>
-                                đa dạng, bổ ích</p>
-                        </div>
-                        <div class="card-content">
-                            <div class="item"><span class="blue-dot dot"></span>
-                                <p>6000+ bài
-                                    luyện tập</p>
+                    <div class="col-lg-5 col-12">
+                        <div class="card">
+                            <div class="card-header d-flex card-blue">
+                                <img src="./img/apple.jpg" alt="">
+                                <p>Kho bài học <br>
+                                    đa dạng, bổ ích</p>
                             </div>
-                            <div class="item"><span class="blue-dot dot"></span>
-                                <p>40+ chủ đề
-                                    thực tiễn, thú vị</p>
-                            </div>
-                            <div class="item"><span class="blue-dot dot"></span>
-                                <p>Từ điển
-                                    phát âm thông minh</p>
-                            </div>
-                            <div class="item"><span class="blue-dot dot"></span>
-                                <p>Video phát
-                                    âm mẫu sinh động</p>
+                            <div class="card-content">
+                                <div class="item"><span class="blue-dot dot"></span>
+                                    <p>6000+ bài
+                                        luyện tập</p>
+                                </div>
+                                <div class="item"><span class="blue-dot dot"></span>
+                                    <p>40+ chủ đề
+                                        thực tiễn, thú vị</p>
+                                </div>
+                                <div class="item"><span class="blue-dot dot"></span>
+                                    <p>Từ điển
+                                        phát âm thông minh</p>
+                                </div>
+                                <div class="item"><span class="blue-dot dot"></span>
+                                    <p>Video phát
+                                        âm mẫu sinh động</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <section class="s-4-btn">
         <div class="container">
             <div class="row btn-group align-items-center
@@ -300,7 +305,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             4
                         </div>
                         <div class="chat-content">
-                            Học tiếng Anh mà như chơi - Tránh việc chơi các
+                            Học tiếng Anh mà như chơi <span class="desktop">-</span> Tránh việc chơi các
                             game vô bổ
                         </div>
                     </div>
@@ -488,7 +493,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="container">
                 <div class="row btn-group align-items-center
                         justify-content-center">
-                    <a class="btn btn-orange mr-20" href="href=" #cam-nhan-phu-huynh"">TÌM HIỂU THÊM</a>
+                    <a class="btn btn-orange mr-20" href="#goi-hoc">TÌM HIỂU THÊM</a>
                     <a class="btn btn-blue" href="#dang-ky">ĐĂNG KÝ NGAY</a>
                 </div>
             </div>
@@ -580,117 +585,119 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </section>
     </div>
-    <section class="plans" id="goi-hoc">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-12">
-                    <div class="plan-card">
-                        <div class="card-header card-orange">
-                            <img src="./img/tenlua.jpg" alt="">
-                            <div>
-                                <div class="card-title">ELSA PRO</div>
-                                <div class="card-sub-title">GÓI KHÔNG GIỚI
-                                    HẠN</div>
-                            </div>
+    <div class="anchor" id="goi-hoc">
+        <section class="plans" id="goi-hoc">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="plan-card">
+                            <div class="card-header card-orange">
+                                <img src="./img/tenlua.jpg" alt="">
+                                <div>
+                                    <div class="card-title">ELSA PRO</div>
+                                    <div class="card-sub-title">GÓI KHÔNG GIỚI
+                                        HẠN</div>
+                                </div>
 
-                        </div>
-                        <div class="card-content">
-                            <p>Giá Gốc: <del>9.125.000Đ</del></p>
-                            <p class="price price-orange">1.995.000<span>Đ</span>
-                            </p>
-                            <div class="item"><span class="orange-dot dot"></span>
-                                <p>Từ điển ELSA</p>
                             </div>
-                            <div class="item"><span class="orange-dot dot"></span>
-                                <p>Nội dung bài học cập nhật liên tục</p>
-                            </div>
-                            <div class="item"><span class="orange-dot dot"></span>
-                                <p>1,500+ bài học</p>
-                            </div>
-                            <div class="item"><span class="orange-dot dot"></span>
-                                <p>Lộ trình học cá nhân hoá <br> theo trình
-                                    độ</p>
-                            </div>
-                            <div class="text-center">
-                                <a class="btn btn-orange
+                            <div class="card-content">
+                                <p>Giá Gốc: <del>9.125.000Đ</del></p>
+                                <p class="price price-orange">1.995.000<span>Đ</span>
+                                </p>
+                                <div class="item"><span class="orange-dot dot"></span>
+                                    <p>Từ điển ELSA</p>
+                                </div>
+                                <div class="item"><span class="orange-dot dot"></span>
+                                    <p>Nội dung bài học cập nhật liên tục</p>
+                                </div>
+                                <div class="item"><span class="orange-dot dot"></span>
+                                    <p>1,500+ bài học</p>
+                                </div>
+                                <div class="item"><span class="orange-dot dot"></span>
+                                    <p>Lộ trình học cá nhân hoá <br> theo trình
+                                        độ</p>
+                                </div>
+                                <div class="text-center">
+                                    <a class="btn btn-orange
                                         text-center" onclick="selectPlan('lifetime_membership')" href=" #dang-ky">ĐĂNG
-                                    KÝ NGAY</a>
+                                        KÝ NGAY</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="plan-card">
-                        <div class="card-header card-blue">
-                            <img src="./img/tenlua.jpg" alt="">
-                            <div>
-                                <div class="card-title">ELSA PRO</div>
-                                <div class="card-sub-title">GÓI 1 NĂM</div>
-                            </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="plan-card">
+                            <div class="card-header card-blue">
+                                <img src="./img/tenlua.jpg" alt="">
+                                <div>
+                                    <div class="card-title">ELSA PRO</div>
+                                    <div class="card-sub-title">GÓI 1 NĂM</div>
+                                </div>
 
-                        </div>
-                        <div class="card-content">
-                            <p>Giá Gốc: <del>989.000Đ</del></p>
-                            <p class="price price-blue">895.000<span>Đ</span>
-                            </p>
-                            <div class="item"><span class="blue-dot dot"></span>
-                                <p>Từ điển ELSA</p>
                             </div>
-                            <div class="item"><span class="blue-dot dot"></span>
-                                <p>Nội dung bài học cập nhật liên tục</p>
-                            </div>
-                            <div class="item"><span class="blue-dot dot"></span>
-                                <p>1,500+ bài học</p>
-                            </div>
-                            <div class="item"><span class="blue-dot dot"></span>
-                                <p>Lộ trình học cá nhân hoá <br> theo trình
-                                    độ</p>
-                            </div>
-                            <div class="text-center">
-                                <a href="#dang-ky" onclick="selectPlan('one_year_credit')"
-                                    class="btn btn-blue text-center">ĐĂNG
-                                    KÝ NGAY</a>
+                            <div class="card-content">
+                                <p>Giá Gốc: <del>989.000Đ</del></p>
+                                <p class="price price-blue">895.000<span>Đ</span>
+                                </p>
+                                <div class="item"><span class="blue-dot dot"></span>
+                                    <p>Từ điển ELSA</p>
+                                </div>
+                                <div class="item"><span class="blue-dot dot"></span>
+                                    <p>Nội dung bài học cập nhật liên tục</p>
+                                </div>
+                                <div class="item"><span class="blue-dot dot"></span>
+                                    <p>1,500+ bài học</p>
+                                </div>
+                                <div class="item"><span class="blue-dot dot"></span>
+                                    <p>Lộ trình học cá nhân hoá <br> theo trình
+                                        độ</p>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#dang-ky" onclick="selectPlan('one_year_credit')"
+                                        class="btn btn-blue text-center">ĐĂNG
+                                        KÝ NGAY</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="plan-card">
-                        <div class="card-header card-purple">
-                            <img src="./img/tenlua.jpg" alt="">
-                            <div>
-                                <div class="card-title">ELSA PRO</div>
-                                <div class="card-sub-title">GÓI 2 NĂM</div>
-                            </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="plan-card">
+                            <div class="card-header card-purple">
+                                <img src="./img/tenlua.jpg" alt="">
+                                <div>
+                                    <div class="card-title">ELSA PRO</div>
+                                    <div class="card-sub-title">GÓI 2 NĂM</div>
+                                </div>
 
-                        </div>
-                        <div class="card-content">
-                            <p>Giá Gốc: <del>1.978.000Đ</del></p>
-                            <p class="price price-purple">1.395.000<span>Đ</span>
-                            </p>
-                            <div class="item"><span class="purple-dot dot"></span>
-                                <p>Từ điển ELSA</p>
                             </div>
-                            <div class="item"><span class="purple-dot dot"></span>
-                                <p>Nội dung bài học cập nhật liên tục</p>
-                            </div>
-                            <div class="item"><span class="purple-dot dot"></span>
-                                <p>1,500+ bài học</p>
-                            </div>
-                            <div class="item"><span class="purple-dot dot"></span>
-                                <p>Lộ trình học cá nhân hoá <br> theo trình
-                                    độ</p>
-                            </div>
-                            <div class="text-center">
-                                <a href="#dang-ky" onclick="selectPlan('two_years_credit')" class="btn btn-purple
+                            <div class="card-content">
+                                <p>Giá Gốc: <del>1.978.000Đ</del></p>
+                                <p class="price price-purple">1.395.000<span>Đ</span>
+                                </p>
+                                <div class="item"><span class="purple-dot dot"></span>
+                                    <p>Từ điển ELSA</p>
+                                </div>
+                                <div class="item"><span class="purple-dot dot"></span>
+                                    <p>Nội dung bài học cập nhật liên tục</p>
+                                </div>
+                                <div class="item"><span class="purple-dot dot"></span>
+                                    <p>1,500+ bài học</p>
+                                </div>
+                                <div class="item"><span class="purple-dot dot"></span>
+                                    <p>Lộ trình học cá nhân hoá <br> theo trình
+                                        độ</p>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#dang-ky" onclick="selectPlan('two_years_credit')" class="btn btn-purple
                                         text-center">ĐĂNG KÝ NGAY</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <section class="form-box" id="dang-ky">
         <div class="container">
             <div class="row">
