@@ -1,3 +1,8 @@
+function selectPlan(value) {
+  $("#membership").val(value);
+  console.log(value);
+}
+
 $(document).ready(function () {
   $(function () {
     // Check select input

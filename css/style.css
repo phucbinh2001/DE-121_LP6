@@ -905,6 +905,10 @@ footer .bct {
     padding: 6px 20px;
   }
 
+  .border-right {
+    padding: 0;
+  }
+
   .font-smaller {
     font-size: 20px;
     display: block;
@@ -915,6 +919,11 @@ footer .bct {
     background-size: cover;
   }
 
+  #navbar {
+    height: 90px;
+    padding: 10px 0;
+  }
+
   header {
     padding: 0;
   }
@@ -922,12 +931,11 @@ footer .bct {
   header .logo {
     display: flex;
     margin-bottom: 10px;
-    padding-top: 30px;
     justify-content: center;
   }
 
   .menu {
-    padding-bottom: 9px;
+    padding: 0 3px;
   }
 
   .menu .active {
@@ -944,7 +952,7 @@ footer .bct {
   }
 
   header .menu a {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   header img {
